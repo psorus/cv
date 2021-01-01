@@ -1,0 +1,1 @@
+{"type":"contact","name":"Simon Klüttermann","email":["Simon.Kluettermann@gmx.de","Simon.Kluettermann@rwth-aachen.de"],"phone number":["004915779789970"],"other":["something"],"color":"whitesmoke"}

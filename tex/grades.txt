@@ -1,0 +1,3 @@
+[{"label":"skills","q":[
+      ["physics","see grades [ENTER LINK grades]"],
+      ["machine learning","{ampel:green}"]]}]

@@ -1,0 +1,46 @@
+<style>
+.dotred {
+  height: 25px;
+  width: 25px;
+  background-color: #d00;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dotgreen {
+  height: 25px;
+  width: 25px;
+  background-color: #0d0;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dotyellow {
+  height: 25px;
+  width: 25px;
+  background-color: #ee0;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dotgray {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.ampel{  vertical-align: middle;
+}
+
+</style>
+
+
+
+
+<style>
+fieldset{background:[backcolor]}
+
+*{background:[backcolor],background-color:[backcolor]}
+legend{background:[backcolor]}
+body{background:[backcolor]}
+
+
+</style>
