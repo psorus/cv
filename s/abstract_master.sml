@@ -1,3 +1,8 @@
+{"type":"text","q":'''
+[LINK cv:Back to CV][n]
+[LINK download_master:Download thesis][n]
+
+
 In my master thesis, I tried to use machine learning to find new physics, by using methods from anomaly detection, namely autoencoder.
 These autoencoder are trained to reproduce any jet you input into them, so jets that are anomalous, those that are produced by any non standart model physics, are reproduced worse.
 This means, that you can use the loss of the autoencoder to find anomalies.
@@ -21,3 +26,5 @@ It is white if the network does not find any difference and red when this differ
 On the left you see the result for a simple dense autoencoder, while the more blue version on the rigth represents my graph autoencoder with normalization and oneoff networks.
 
 Finally I uploaded my graph autoencoder code to pypi and wrote a documentation for it <a href="https://grapa.readthedocs.io/">grapa.readthedocs.io</a>.
+
+'''}
