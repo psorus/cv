@@ -8,7 +8,7 @@ from h import *
 
 def addcbox(h,q,which,tex):
   ach='''<script type="text/javascript">
-  function ftest1(q) {
+  function ftest{which}(q) {
     x=document.querySelectorAll("dd.{which}")
     for(var i=0;i<x.length;i++){
       if (x[i].style.display ==="none"){x[i].style.display="block";}else{x[i].style.display="none";}
@@ -22,7 +22,7 @@ def addcbox(h,q,which,tex):
 </script>'''
   ach=ach.replace("{which}",str(which))
   ach=ach.replace("{tex}",str(tex))
-  acx=f'''  <input type="checkbox" id="hide{which}" name="hide{which}" value="True" onclick="ftest1(this)" checked>
+  acx=f'''  <input type="checkbox" id="hide{which}" name="hide{which}" value="True" onclick="ftest{which}(this)" checked>
 <label for="hide{which}">show {tex}</label>'''
   
   h.append(ach)
@@ -139,3 +139,5 @@ def doublelist(p):
   
   return ret
   return visualise(q["q"])
+
+# def doublelistpdf(q):

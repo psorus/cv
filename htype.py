@@ -19,3 +19,5 @@ function redirect() {
 </html> 
 
   """.replace("###",handlelink(q["q"]))
+
+# def linkingpagepdf(q):

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CV</title>
+<script type="text/javascript">
+  function ftestweak(q) {
+    x=document.querySelectorAll("dd.weak")
+    for(var i=0;i<x.length;i++){
+      if (x[i].style.display ==="none"){x[i].style.display="block";}else{x[i].style.display="none";}
+    }
+    x=document.querySelectorAll("dt.weak")
+    for(var i=0;i<x.length;i++){
+      if (x[i].style.display ==="none"){x[i].style.display="block";}else{x[i].style.display="none";}
+    }
+
+  }
+</script>
+<script type="text/javascript">
+  function ftestmediocre(q) {
+    x=document.querySelectorAll("dd.mediocre")
+    for(var i=0;i<x.length;i++){
+      if (x[i].style.display ==="none"){x[i].style.display="block";}else{x[i].style.display="none";}
+    }
+    x=document.querySelectorAll("dt.mediocre")
+    for(var i=0;i<x.length;i++){
+      if (x[i].style.display ==="none"){x[i].style.display="block";}else{x[i].style.display="none";}
+    }
+
+  }
+</script>
+<script type="text/javascript">
+  function ftestobvious(q) {
+    x=document.querySelectorAll("dd.obvious")
+    for(var i=0;i<x.length;i++){
+      if (x[i].style.display ==="none"){x[i].style.display="block";}else{x[i].style.display="none";}
+    }
+    x=document.querySelectorAll("dt.obvious")
+    for(var i=0;i<x.length;i++){
+      if (x[i].style.display ==="none"){x[i].style.display="block";}else{x[i].style.display="none";}
+    }
+
+  }
+</script>
+<style type="text/css">
+
+  dl {
+    display: flex;
+    flex-flow: row wrap;
+    border: solid #333;
+    border-width: 1px 1px 0 0;
+  }
+  dt {
+    flex-basis: 20%;
+    padding: 2px 4px;
+    background: #111;
+    text-align: right;
+    color: #fff;
+    font-size: 1.3em;
+
+  }
+  dd {
+    flex-basis: 70%;
+    flex-grow: 1;
+    margin: 0;
+    padding: 2px 4px;
+    border-bottom: 1px solid #333;
+    font-size: 1.3em;
+
+  }
+
+</style>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<style>.square{
+    counter-reset: list-counter;
+    list-style: none;
+    float:left;
+}
+
+.square li:before{
+    content: counter(list-counter);
+    counter-increment: list-counter;
+    width: 1em;
+    height: 1em;
+    padding: .25em;
+    margin-right: 1em;
+    background: #111;
+    color: #fff;
+    font-family: arial;
+    text-align: center;
+    display: inline-block;
+    
+}</style>
+<style>ul.timeline1 li
+{
+  position: relative;
+  height: 3em;
+  color: #333;
+}
+
+ul.timeline1 li:before
+{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    background: white;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: -11px;
+    top: -0.4em;
+    z-index: -1;
+}
+
+ul.timeline1:before
+{
+  content: "●";
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: -1em;
+  top: 0.1em;
+  color: #aaa;
+}
+
+ul.timeline1:after
+{
+  content: "●";
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: -1em;
+  top: -1em;
+  color: #aaa;
+}</style>
+<style>* {
+  box-sizing: border-box;
+}
+
+/* Set a background color */
+body {
+  background-color: white;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: white;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}</style>
+
+<style>
+.dotred {
+  height: 25px;
+  width: 25px;
+  background-color: #d00;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dotgreen {
+  height: 25px;
+  width: 25px;
+  background-color: #0d0;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dotyellow {
+  height: 25px;
+  width: 25px;
+  background-color: #ee0;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dotgray {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.ampel{  vertical-align: middle;
+}
+
+</style>
+
+
+
+
+<style>
+fieldset{background:white}
+
+*{background:white,background-color:white}
+legend{background:white}
+body{background:white}
+
+
+</style>
+<style>body{background-color:white;}</style>
+
+</head>
+<body>
+<div class="row">
+  <div class="column" style="background-color:#fff;">
+    <fieldset>
+<legend>timeline</legend>
+
+<dl>
+<dt class='full'>1997</dt><dd class='full'>born in m&ouml;nchengladbach</dd>
+<dt class='full'>2015</dt><dd class='full'>finished school (franz meyers gymnasium)</dd>
+<dt class='full'>later that year</dt><dd class='full'>started studying physics (@RWTH university)</dd>
+<dt class='full'>2018</dt><dd class='full'>finished bachelor studies</dd>
+<dt class='full'></dt><dd class='full'>see <a href="file:///C:/Users/User/gits/cv/site/s/abstract_bachelor.html">Thesis abstract</a> or <a href="file:///C:/Users/User/gits/cv/site/s/download_bachelor.html">Thesis download</a> aswell as my <a href="file:///C:/Users/User/gits/cv/site/s/grades_bachelor.html">Grades</a></dd>
+<dt class='full'>2020</dt><dd class='full'>finished master studies</dd>
+<dt class='full'></dt><dd class='full'>see <a href="file:///C:/Users/User/gits/cv/site/s/abstract_master.html">Thesis abstract</a> or <a href="file:///C:/Users/User/gits/cv/site/s/download_master.html">Thesis download</a> aswell as my <a href="file:///C:/Users/User/gits/cv/site/s/grades.html">Grades</a></dd>
+<dt class='full'>final grades</dt><dd class='full'>depending on my master thesis somewhere between 1.4 and 2.6 (<a href="file:///C:/Users/User/gits/cv/site/s/finalgrade.html">more</a>)</dd>
+</dl>
+</fieldset>
+<fieldset>
+<legend>programming languages</legend>
+  <input type="checkbox" id="hideweak" name="hideweak" value="True" onclick="ftestweak(this)" checked>
+<label for="hideweak">show weak</label>
+<dl>
+<dt class='full'>python</dt><dd class='full'><span class="ampel" title="great"><span class="dotgreen"></span>
+<span class="dotgray"></span>
+<span class="dotgray"></span></span> <a href="file:///C:/Users/User/gits/cv/site/s/whypython.html">More...</a></dd>
+<dt class='full'>visual basic</dt><dd class='full'><span class="ampel" title="great"><span class="dotgreen"></span>
+<span class="dotgray"></span>
+<span class="dotgray"></span></span> <a href="file:///C:/Users/User/gits/cv/site/s/whyvbasic.html">More...</a></dd>
+<dt class='full'>c++</dt><dd class='full'><span class="ampel" title="good"><span class="dotgray"></span>
+<span class="dotyellow"></span>
+<span class="dotgray"></span></span> <a href="file:///C:/Users/User/gits/cv/site/s/whycpp.html">More...</a></dd>
+<dt class='weak'>solidity</dt><dd class='weak'><span class="ampel" title="average"><span class="dotgray"></span>
+<span class="dotgray"></span>
+<span class="dotred"></span></span> <a href="file:///C:/Users/User/gits/cv/site/s/whysolidity.html">More...</a></dd>
+<dt class='weak'>php</dt><dd class='weak'><span class="ampel" title="average"><span class="dotgray"></span>
+<span class="dotgray"></span>
+<span class="dotred"></span></span> <a href="file:///C:/Users/User/gits/cv/site/s/whyweb.html">More...</a></dd>
+<dt class='weak'>javascript</dt><dd class='weak'><span class="ampel" title="average"><span class="dotgray"></span>
+<span class="dotgray"></span>
+<span class="dotred"></span></span> <a href="file:///C:/Users/User/gits/cv/site/s/whyweb.html">More...</a></dd>
+<dt class='weak'>html/css</dt><dd class='weak'><span class="ampel" title="average"><span class="dotgray"></span>
+<span class="dotgray"></span>
+<span class="dotred"></span></span> <a href="file:///C:/Users/User/gits/cv/site/s/whyweb.html">More...</a></dd>
+</dl>
+</fieldset>
+<fieldset>
+<legend>languages</legend>
+
+<dl>
+<dt class='full'>german</dt><dd class='full'><span class="ampel" title="great"><span class="dotgreen"></span>
+<span class="dotgray"></span>
+<span class="dotgray"></span></span></dd>
+<dt class='full'>english</dt><dd class='full'><span class="ampel" title="great"><span class="dotgreen"></span>
+<span class="dotgray"></span>
+<span class="dotgray"></span></span></dd>
+</dl>
+</fieldset>
+  </div>
+  <div class="column" style="background-color:#fff;">
+    <fieldset>
+<legend>skills</legend>
+  <input type="checkbox" id="hidemediocre" name="hidemediocre" value="True" onclick="ftestmediocre(this)" checked>
+<label for="hidemediocre">show mediocre</label>
+  <input type="checkbox" id="hideobvious" name="hideobvious" value="True" onclick="ftestobvious(this)" checked>
+<label for="hideobvious">show obvious</label>
+<dl>
+<dt class='full'>physics</dt><dd class='full'>see <a href="file:///C:/Users/User/gits/cv/site/s/grades.html">grades</a></dd>
+<dt class='full'>machine learning</dt><dd class='full'><span class="ampel" title="great"><span class="dotgreen"></span>
+<span class="dotgray"></span>
+<span class="dotgray"></span></span> <a href="file:///C:/Users/User/gits/cv/site/s/whyml.html">More...</a></dd>
+<dt class='full'>tensorflow</dt><dd class='full'><span class="ampel" title="great"><span class="dotgreen"></span>
+<span class="dotgray"></span>
+<span class="dotgray"></span></span> <a href="file:///C:/Users/User/gits/cv/site/s/whyml.html">More...</a></dd>
+<dt class='full'>keras</dt><dd class='full'><span class="ampel" title="great"><span class="dotgreen"></span>
+<span class="dotgray"></span>
+<span class="dotgray"></span></span> <a href="file:///C:/Users/User/gits/cv/site/s/whyml.html">More...</a></dd>
+<dt class='full'>automatisation</dt><dd class='full'><span class="ampel" title="great"><span class="dotgreen"></span>
+<span class="dotgray"></span>
+<span class="dotgray"></span></span> <a href="file:///C:/Users/User/gits/cv/site/s/whyautomate.html">More...</a></dd>
+<dt class='full'>anomaly detection</dt><dd class='full'><span class="ampel" title="great"><span class="dotgreen"></span>
+<span class="dotgray"></span>
+<span class="dotgray"></span></span> <a href="file:///C:/Users/User/gits/cv/site/s/whyanomaly.html">More...</a></dd>
+<dt class='full'>statistics</dt><dd class='full'><span class="ampel" title="great"><span class="dotgreen"></span>
+<span class="dotgray"></span>
+<span class="dotgray"></span></span> <a href="file:///C:/Users/User/gits/cv/site/s/whystatistics.html">More...</a></dd>
+<dt class='full'>web scraping</dt><dd class='full'><span class="ampel" title="good"><span class="dotgray"></span>
+<span class="dotyellow"></span>
+<span class="dotgray"></span></span> <a href="file:///C:/Users/User/gits/cv/site/s/whyscrape.html">More...</a></dd>
+<dt class='full'>cryptography</dt><dd class='full'><span class="ampel" title="good"><span class="dotgray"></span>
+<span class="dotyellow"></span>
+<span class="dotgray"></span></span></dd>
+<dt class='full'>blockchain</dt><dd class='full'><span class="ampel" title="good"><span class="dotgray"></span>
+<span class="dotyellow"></span>
+<span class="dotgray"></span></span> <a href="file:///C:/Users/User/gits/cv/site/s/whyblockchain.html">More...</a></dd>
+<dt class='full'>web development</dt><dd class='full'><span class="ampel" title="good"><span class="dotgray"></span>
+<span class="dotyellow"></span>
+<span class="dotgray"></span></span> <a href="file:///C:/Users/User/gits/cv/site/s/whyweb.html">More...</a></dd>
+<dt class='full'>sympy</dt><dd class='full'><span class="ampel" title="good"><span class="dotgray"></span>
+<span class="dotyellow"></span>
+<span class="dotgray"></span></span> <a href="file:///C:/Users/User/gits/cv/site/s/whysympy.html">More...</a></dd>
+<dt class='full'>graph theory</dt><dd class='full'><span class="ampel" title="good"><span class="dotgray"></span>
+<span class="dotyellow"></span>
+<span class="dotgray"></span></span> <a href="file:///C:/Users/User/gits/cv/site/s/whygraph.html">More...</a></dd>
+<dt class='mediocre'>opengl</dt><dd class='mediocre'><span class="ampel" title="average"><span class="dotgray"></span>
+<span class="dotgray"></span>
+<span class="dotred"></span></span></dd>
+<dt class='mediocre'>flask</dt><dd class='mediocre'><span class="ampel" title="average"><span class="dotgray"></span>
+<span class="dotgray"></span>
+<span class="dotred"></span></span></dd>
+<dt class='mediocre'>microcontroller programming</dt><dd class='mediocre'><span class="ampel" title="average"><span class="dotgray"></span>
+<span class="dotgray"></span>
+<span class="dotred"></span></span></dd>
+<dt class='obvious'>vim</dt><dd class='obvious'><span class="ampel" title="good"><span class="dotgray"></span>
+<span class="dotyellow"></span>
+<span class="dotgray"></span></span></dd>
+<dt class='obvious'>numpy</dt><dd class='obvious'><span class="ampel" title="great"><span class="dotgreen"></span>
+<span class="dotgray"></span>
+<span class="dotgray"></span></span></dd>
+<dt class='obvious'>matplotlib</dt><dd class='obvious'><span class="ampel" title="great"><span class="dotgreen"></span>
+<span class="dotgray"></span>
+<span class="dotgray"></span></span></dd>
+<dt class='obvious'>bash</dt><dd class='obvious'><span class="ampel" title="good"><span class="dotgray"></span>
+<span class="dotyellow"></span>
+<span class="dotgray"></span></span></dd>
+<dt class='obvious'>latex</dt><dd class='obvious'><span class="ampel" title="good"><span class="dotgray"></span>
+<span class="dotyellow"></span>
+<span class="dotgray"></span></span></dd>
+<dt class='obvious'>scipy</dt><dd class='obvious'><span class="ampel" title="average"><span class="dotgray"></span>
+<span class="dotgray"></span>
+<span class="dotred"></span></span></dd>
+</dl>
+</fieldset>
+  </div>
+</div>
+</body>
+</html>

@@ -41,3 +41,5 @@ def contact(q):
 
 
   return adaptouter(q,ret,head)
+
+# def contactpdf(q):

@@ -1,6 +1,6 @@
 {"type":"text","q":'''
-[LINK cv:Back to CV][n]
-[LINK download_master:Download thesis][n]
+[LI cv:Back to CVNK][n]
+[LI download_master:Download thesisNK][n]
 
 
 In my master thesis, I tried to use machine learning to find new physics, by using methods from anomaly detection, namely autoencoder.

@@ -97,5 +97,5 @@ a.l===:hover, a.l===active {background-color:§§§;border-style: solid;border-c
   
   return adaptouter(q,ret,head)
   
-  
+# def buttonedpdf(q):
   

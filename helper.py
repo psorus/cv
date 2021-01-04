@@ -53,10 +53,20 @@ def replacer(q,fontsize="1.3em",add=None):
 
 
 def handlelink(q):
-  if len(q)>1 and q[0]==":":return "s:"+q[1:]
-  if len(q)>2 and q[:2]=="s:":return "/s/"+q[2:]
-  if len(q)>0 and q[0]=="/":return (url+q).replace("//","/")
-  return q
+  add=""
+  if addhtml:add=".html"
+  # print("handling",q)
+  if len(q)>1 and q[0]==":":q= "s:"+q[1:]
+  if len(q)>2 and (q[:2]=="s:" or q[:2]=="s/"):return url+"/s/"+q[2:]+add
+  if len(q)>0 and q[0]=="/":
+    if "." in q:
+      return (url+q).replace("//","/")
+    else:
+      return (url+q+add).replace("//","/")
+  if "." in q:
+    return q
+  else:
+    return handlelink("s:"+q)
 
 def texmodify(x,add=None):
   x=replacer(x,add=add)
@@ -65,6 +75,11 @@ def texmodify(x,add=None):
 
 
   for key in fs.keys():
-    x=x.replace(f"[LINK {key}:",f'<a href="{handlelink(url)}{fs[key]}">')
-  x=x.replace("]","</a>")
+    x=x.replace(f"[LI {key}:",f'<a href="{handlelink(fs[key])}">')
+  x=x.replace("NK]","</a>")
   return x
+  
+if __name__=="__main__":
+  q="s:abstract_master"
+  print(q)
+  print(handlelink(q))

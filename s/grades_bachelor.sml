@@ -21,7 +21,7 @@
   [{"label":"Experimental","q":[
 ["Mechanics","3.7 {ampel:red}"],
 ["Electrodynamics","2.0 {ampel:yellow}"],
-["Discussion in experimental physics","3.0 {ampel:red} [LINK explain_discuss:What is this?]"],
+["Discussion in experimental physics","3.0 {ampel:red} [LI explain_discuss:What is this?NK]"],
 ["Optics","1.7 {ampel:yellow}"],
 ["Nuclear Physics","2.7 {ampel:red}"],
 ["Solid State Physics","1.7 {ampel:yellow}"],
@@ -37,9 +37,9 @@
 ["Algorithms and Datastructures","2.0 {ampel:yellow}"],
 ["Basics of data analysis","3.3 {ampel:yellow}"],
   ]},
-  {"label":"Other","q":[["My Master grades","[LINK grades:Here]"],
-  ["Complete Statistics","[LINK grades_stats:Here]"],
-  ["Back to CV","[LINK cv:Here]"]]}
+  {"label":"Other","q":[["My Master grades","[LI grades:HereNK]"],
+  ["Complete Statistics","[LI grades_stats:HereNK]"],
+  ["Back to CV","[LI cv:HereNK]"]]}
   
   ]
   
