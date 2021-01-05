@@ -1,1 +1,1 @@
-{"type":"link","q":"{url}/bachelorthesis.pdf"}
+{"type":"link","q":"{url}/BA.pdf"}
