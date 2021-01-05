@@ -3,4 +3,4 @@ url="http://127.0.0.1:5000/"
 url="http://www.psorus.de/"
 
 addhtml=True
-onlinemode=False
+onlinemode=True
