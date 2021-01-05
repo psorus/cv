@@ -2,39 +2,20 @@
 <html>
 <head>
 <title></title>
+<style>
 
+* {
+  
+  font-size:large;
+  line-break:loose;
+  }
+
+
+
+</style>
 
 </head>
 <body>
-
-<a href="file:///C:/Users/User/gits/cv/site/s/cv.html">Back to CV</a><br>
-<a href="file:///C:/Users/User/gits/cv/site/s/download_master.html">Download thesis</a><br>
-
-
-In my master thesis, I tried to use machine learning to find new physics, by using methods from anomaly detection, namely autoencoder.
-These autoencoder are trained to reproduce any jet you input into them, so jets that are anomalous, those that are produced by any non standart model physics, are reproduced worse.
-This means, that you can use the loss of the autoencoder to find anomalies.
-The initial focus of my master thesis, was to combine these autoencoder method with graph like neuronal networks, and see if this helps finding new physics.
-Even though I was able to combine those two ideas into working graph autoencoder, using them to find new physics jets is a little more difficult: The best networks are those only utilizing a few particles, and those that are not able to reconstruct angles at all.
-This is because of the way these networks are usually evaluated: Instead of simulating some theory, we try to find thos e jets that are produced by top quarks in a background of jets that are produced by the rest of qcd.
-I was able to notice, that a difference between qcd and top jets, namely the width in eta/phi space, is exactly what the autoencoder focusses on.
-This trivial difference is able to reach very good differences, and even a bad model is sensitive to it.
-Sadly it is also fairly useless for detecting new physics, since the only new anomaly these networks would be able to find are those that are even wider. 
-
-So to create a network that is able to find new physics, we need to make it ignore this feature.
-I tried two different approaches, first one using a normalization to remove the width from our input features and another extending the power of the autoencoder by another anomaly detection algorithm, I call oneoff networks.
-These oneoff networks are based on an anomaly in the training of normalized networks and allow me to create anomaly detectors that are very general.
-The price for this generallity is, that quality of the difference is much lower.
-You can see the benefit very clearly in the following plot
-{ENTER PLOTS}
-In these plots I show 8 datasets, beeing compared to each other.
-This means, instead of measuring how well a model can do the task of finding top jets, I use 56 comparisons.
-Each colored square is one comparison, that should be deeply blue for a perfect seperation.
-It is white if the network does not find any difference and red when this difference is negative.
-On the left you see the result for a simple dense autoencoder, while the more blue version on the rigth represents my graph autoencoder with normalization and oneoff networks.
-
-Finally I uploaded my graph autoencoder code to pypi and wrote a documentation for it <a href="https://grapa.readthedocs.io/">grapa.readthedocs.io</a>.
-
-
+<div><br><a href="http://psorus.de//s/cv.html">Back to CV</a><br><br><a href="http://psorus.de//s/download_master.html">Download thesis</a><br><br><br><br>In my master thesis, I tried to use machine learning to find new physics, by using methods from anomaly detection, namely autoencoder.<br>These autoencoder are trained to reproduce any jet you input into them, so jets that are anomalous, those that are produced by any non standart model physics, are reproduced worse.<br>This means, that you can use the loss of the autoencoder to find anomalies.<br>The initial focus of my master thesis, was to combine these autoencoder method with graph like neuronal networks, and see if this helps finding new physics.<br>Even though I was able to combine those two ideas into working graph autoencoder, using them to find new physics jets is a little more difficult: The best networks are those only utilizing a few particles, and those that are not able to reconstruct angles at all.<br>This is because of the way these networks are usually evaluated: Instead of simulating some theory, we try to find thos e jets that are produced by top quarks in a background of jets that are produced by the rest of qcd.<br>I was able to notice, that a difference between qcd and top jets, namely the width in eta/phi space, is exactly what the autoencoder focusses on.<br>This trivial difference is able to reach very good differences, and even a bad model is sensitive to it.<br>Sadly it is also fairly useless for detecting new physics, since the only new anomaly these networks would be able to find are those that are even wider. <br><br>So to create a network that is able to find new physics, we need to make it ignore this feature.<br>I tried two different approaches, first one using a normalization to remove the width from our input features and another extending the power of the autoencoder by another anomaly detection algorithm, I call oneoff networks.<br>These oneoff networks are based on an anomaly in the training of normalized networks and allow me to create anomaly detectors that are very general.<br>The price for this generallity is, that quality of the difference is much lower.<br>You can see the benefit very clearly in the following plot<br>{ENTER PLOTS}<br>In these plots I show 8 datasets, beeing compared to each other.<br>This means, instead of measuring how well a model can do the task of finding top jets, I use 56 comparisons.<br>Each colored square is one comparison, that should be deeply blue for a perfect seperation.<br>It is white if the network does not find any difference and red when this difference is negative.<br>On the left you see the result for a simple dense autoencoder, while the more blue version on the rigth represents my graph autoencoder with normalization and oneoff networks.<br><br>Finally I uploaded my graph autoencoder code to pypi and wrote a documentation for it <a href="https://grapa.readthedocs.io/">grapa.readthedocs.io</a>.<br><br></div>
 </body>
 </html>
