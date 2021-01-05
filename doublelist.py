@@ -4,6 +4,7 @@ from helper import *
 from outer import *
 
 from h import *
+from const import *
 
 
 def addcbox(h,q,which,tex):
@@ -54,8 +55,9 @@ def adddict(h,x):
   
   
   q=[]
-  for ss in s:
-    h,q=addcbox(h,q,ss,ss)
+  if onlinemode:
+    for ss in s:
+      h,q=addcbox(h,q,ss,ss)
   
   q="\n".join(q)
   

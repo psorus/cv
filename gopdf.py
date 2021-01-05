@@ -1,10 +1,11 @@
 import pdfkit as p
 import os
 
+options={"page-size":"A4"}
 
 def trafoone(fro,too):
   print("transforming",fro)
-  p.from_file(fro,too.replace(".html","")+".pdf")
+  p.from_file(fro,too.replace(".html","")+".pdf",options=options)
 
 def transform(fro,too):
   if not os.path.isdir(too):os.makedirs(too)
