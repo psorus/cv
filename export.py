@@ -28,6 +28,7 @@ def trafofile(q,p):
     f.write(handlefile(q))
 
 trafofile("index","index")
+os.system("cp permasite/* site -r")
 
 
 for fil in [q[:q.find(".")] for q in os.listdir("s")]:
