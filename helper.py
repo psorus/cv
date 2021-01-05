@@ -40,6 +40,7 @@ def replacer(q,fontsize="1.3em",add=None):
   q=q.replace("{ampel:2}",genampel(2,add=add))
   q=q.replace("{ampel:green}",genampel(2,add=add))
   q=q.replace("{ampel:g}",genampel(2,add=add))
+  q=q.replace("{url}",url)
   q=q.replace("##fs##",fontsize)
   q=q.replace("[n]","<br>")
   
