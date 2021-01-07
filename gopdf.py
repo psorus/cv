@@ -10,7 +10,7 @@ def trafoone(fro,too):
 def transform(fro,too):
   if not os.path.isdir(too):os.makedirs(too)
   for pat in [fro+q for q in os.listdir(fro)]:
-    if os.path.isfile(pat):
+    if os.path.isfile(pat) and ".pdf" in pat:
       trafoone(pat,pat.replace(fro,too))
     if os.path.isdir(pat):
       pat=pat+"/"
