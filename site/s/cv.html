@@ -2,6 +2,45 @@
 <html>
 <head>
 <title>CV</title>
+<script type="text/javascript">
+  function ftestweak(q) {
+    x=document.querySelectorAll("dd.weak")
+    for(var i=0;i<x.length;i++){
+      if (x[i].style.display ==="none"){x[i].style.display="block";}else{x[i].style.display="none";}
+    }
+    x=document.querySelectorAll("dt.weak")
+    for(var i=0;i<x.length;i++){
+      if (x[i].style.display ==="none"){x[i].style.display="block";}else{x[i].style.display="none";}
+    }
+
+  }
+</script>
+<script type="text/javascript">
+  function ftestmediocre(q) {
+    x=document.querySelectorAll("dd.mediocre")
+    for(var i=0;i<x.length;i++){
+      if (x[i].style.display ==="none"){x[i].style.display="block";}else{x[i].style.display="none";}
+    }
+    x=document.querySelectorAll("dt.mediocre")
+    for(var i=0;i<x.length;i++){
+      if (x[i].style.display ==="none"){x[i].style.display="block";}else{x[i].style.display="none";}
+    }
+
+  }
+</script>
+<script type="text/javascript">
+  function ftestobvious(q) {
+    x=document.querySelectorAll("dd.obvious")
+    for(var i=0;i<x.length;i++){
+      if (x[i].style.display ==="none"){x[i].style.display="block";}else{x[i].style.display="none";}
+    }
+    x=document.querySelectorAll("dt.obvious")
+    for(var i=0;i<x.length;i++){
+      if (x[i].style.display ==="none"){x[i].style.display="block";}else{x[i].style.display="none";}
+    }
+
+  }
+</script>
 <style type="text/css">
 
   dl {
@@ -292,13 +331,11 @@ body{background:white}
 
 
 </style>
-<style>h3{text-align:center;color:#555;font-size:30px}</style>
-<style>h4{text-align:center;color:#555;font-size:20px}</style>
 <style>body{background-color:white;}</style>
 
 </head>
 <body>
-<h1>CV Simon Kl&uuml;ttermann</h1><h4>I strongly suggest not reading this here, since this is just a port of my better (online) CV, which you find at <a href='http://www.psorus.de/s/cv.html' target='_blank'>http://www.psorus.de/s/cv.html</a></h4><div class="row">
+<div class="row">
   <div class="column" style="background-color:#fff;">
     <fieldset>
 <legend>timeline</legend>
@@ -316,7 +353,8 @@ body{background:white}
 </fieldset>
 <fieldset>
 <legend>programming languages</legend>
-
+  <input type="checkbox" id="hideweak" name="hideweak" value="True" onclick="ftestweak(this)" checked>
+<label for="hideweak">show weak</label>
 <dl>
 <dt class='full'>python</dt><dd class='full'><span class="ampel" title="great"><span class="dotgreen"></span>
 <span class="dotgray"></span>
@@ -357,7 +395,10 @@ body{background:white}
   <div class="column" style="background-color:#fff;">
     <fieldset>
 <legend>skills</legend>
-
+  <input type="checkbox" id="hidemediocre" name="hidemediocre" value="True" onclick="ftestmediocre(this)" checked>
+<label for="hidemediocre">show mediocre</label>
+  <input type="checkbox" id="hideobvious" name="hideobvious" value="True" onclick="ftestobvious(this)" checked>
+<label for="hideobvious">show obvious</label>
 <dl>
 <dt class='full'>physics</dt><dd class='full'>see <a href="http://www.psorus.de//s/grades.html">grades</a></dd>
 <dt class='full'>machine learning</dt><dd class='full'><span class="ampel" title="great"><span class="dotgreen"></span>
