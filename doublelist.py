@@ -118,6 +118,7 @@ def doublelist(p):
   h,c1=docollumn(h,q[0])
   h,c2=docollumn(h,q[1])
   rel=[]
+
   h,rel=collums(h,rel,c1,c2)
   
   h.append(h1)
@@ -134,6 +135,14 @@ def doublelist(p):
   
   with open("style/doublelist.css","r") as f:
     h.append(f.read())
+  
+  if not onlinemode:
+    rel1="<h1>CV Simon Klüttermann</h1>"
+    rel2="<h4>I strongly suggest not reading this here, since this is just a port of my better (online) CV, which you find at <a href='http://www.psorus.de/s/cv.html' target='_blank'>http://www.psorus.de/s/cv.html</a></h4>"
+    rel=rel1+rel2+"\n\n".join(rel)
+    h.append("""<style>h3{text-align:center;color:#555;font-size:30px}</style>""")
+    h.append("""<style>h4{text-align:center;color:#555;font-size:20px}</style>""")
+  
   
   ret=adaptouter(p,rel,h)
     
