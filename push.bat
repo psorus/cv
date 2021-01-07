@@ -1,5 +1,5 @@
 git pull
-python export.py
+python push.py
 git add *
 git commit -am "autopushing"
 git push
