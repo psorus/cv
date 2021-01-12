@@ -40,6 +40,11 @@ def contact(q):
   if "back" in q.keys():
     for ot in q["back"]:
       ret.append('<p style="back">%s</p>' % ot)
+  if "image" in q.keys():
+    ac=q["image"]
+    ret.append('<i src="%s" alt="my image"></i>' % handlelink(ac))
+
+  
   
       
 
