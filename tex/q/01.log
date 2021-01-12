@@ -1,0 +1,14 @@
+This is LuaTeX, Version 1.12.0 (TeX Live 2020/Arch Linux)  (format=luatex 2021.1.11)  11 JAN 2021 14:33
+ restricted system commands enabled.
+**01.tex
+(./01.tex
+! Undefined control sequence.
+l.7 \documentclass
+                []{cover}
+? 
+! Emergency stop.
+l.7 \documentclass
+                []{cover}
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!

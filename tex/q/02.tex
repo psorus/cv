@@ -1,0 +1,75 @@
+%% Base on http://tex.stackexchange.com/questions/150900/latex-coding-for-statement-of-purpose
+
+\documentclass{article}
+\usepackage[
+  a4paper,
+  margin=1in,
+  headsep=4pt, % separation between header rule and text
+]{geometry}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tgschola}
+\usepackage{lastpage}
+\usepackage[natbibapa]{apacite}
+\usepackage[ngerman]{babel}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{%
+  \footnotesize\sffamily
+  \yourname\quad
+  web: \textcolor{blue}{\itshape\yourweb}\quad
+  \textcolor{blue}{\youremail}}
+%\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+
+\newcommand{\soptitle}{Research interests}
+
+\newcommand{\yourname}{Simon Kluettermann}
+\newcommand{\youremail}{Simon.Kluettermann@rwth-aachen.de}
+\newcommand{\yourweb}{https://www.psorus.de/}
+
+\newcommand{\statement}[1]{\par\medskip
+  \textcolor{black}{\textbf{#1:}}\space
+}
+
+\usepackage[
+  breaklinks,
+  pdftitle={\yourname - \soptitle},
+  pdfauthor={\yourname},
+  unicode
+]{hyperref}
+
+
+
+\begin{document}
+
+\begin{center}\LARGE\soptitle\\
+\large of \yourname\ (PhD applicant)
+\end{center}
+
+\hrule
+\vspace{1pt}
+\hrule height 1pt
+
+\bigskip
+
+\statement{Past research}After a \href{https://psorus.de/s/abstract_bachelor.html}{bachelor thesis} about using machine learning to improve the AMS detector analysis, I wrote my \textcolor{blue}{\href{https://psorus.de/s/abstract_master.html}{masters thesis (Deep learning for new physics mining at the LHC}} about a modification of \textcolor{blue}{\href{https://arxiv.org/abs/1808.08979}{this}} Paper (QCDorWhat). There idea, was to use machine learning, namely anomaly detection, to unsupervisedly detect LHC jets that are not (only) the product of standart model interactions. My initial task, was to apply graph machine learning to the same task and see if this improves the quality. And even though this is not such an easy task, it became clear that the true problem lies in their initial approach. To find anomalous jet events, they used autoencoder. Sadly their desire of finding any anomalous event was only tested on limited anomalies, which resulted in them beeing great at finding this anomaly, but sadly not very good at every other one. After I found this, my master thesis kind of pivoted, making me focuss more on generality then on quality. Even though I had to use other algorithms than autoencoders to make this work, my final models are very general, and able to detect neirly any anomaly (there is a nice comparison plot at the end of my \textcolor{blue}{\href{https://grapa.readthedocs.io/en/latest/thesisdown.html}{thesis defence}}).
+\statement{Future interests}My future interestests are strongly influenced by my thesis. On the machine learning side, this means that I have a strong interrest in understanding my models on a deeper level (and a sligth bias to thinking that machine learning models are less powerful and complicated than they seem), while on a scientific level I think it is sad, that good anomaly detection is a bit neglected, as there are only few fields were it could not be applied. Dark Matter searches are a prime example of a field that could profit from good anomaly detection. Instead of searching for expected results, anomaly detection can search for anything unexplainable. This can make it hard to differentiate between sources of these anomalies, but also allows you to make connections that could not be done by a human. On a more philosophical level I am faszinated by this idea. The concept of things that cannot be found by a human biases, but could be found by a machine. Finally some other things that I was/am interrested in, you find in my \textcolor{blue}{\href{https://github.com/psorus}{github}} and I definitely do not just want to do things that I am familiar with already.
+
+
+\section*{Referees}
+
+\begin{itemize}
+
+\item \textcolor{blue}{\href{https://www.particle-theory.rwth-aachen.de/cms/Particle-Theory/Das-Institut/Mitarbeiter-TTK/Professoren/~ggbq/Kraemer-Michael/}{Prof. Dr. Michael Krämer}}: \textcolor{blue}{\href{mailto:mkraemer@physik.rwth-aachen.de}{mkraemer@physik.rwth-aachen.de} }
+
+
+\item \textcolor{blue}{\href{https://www.physik.rwth-aachen.de/go/id/dwqp/gguid/0x77F3E5EE891C184AB09DDB02432A6208/ikz/11/allou/1}{Dr. Alexander Mück}}: \textcolor{blue}{\href{mailto:mueck@physik.rwth-aachen.de}{mueck@physik.rwth-aachen.de} }
+
+\end{itemize}
+
+
+
+
+\end{document}
+
