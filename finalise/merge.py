@@ -42,7 +42,7 @@ def main(what):
     inp=[open(fil,"rb") for fil in files]
 
 
-    for zw in inp:merger.append(zw)
+    for zw in inp:merger.append(zw,import_bookmarks=False)
 
 
     merger.write(open(output, "wb"))

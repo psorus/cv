@@ -23,13 +23,13 @@
       ["german","{ampel:green}"],
       ["english","{ampel:green}"],
     ]},
-    {"label":"Legend","q":[
-      ["{ampel:green}",">=O(1000)h of experience"],
-      ["{ampel:yellow}}","O(100)h of experience"],
-      ["{ampel:red}","basic knowledge"],      
-    ]}
   ],
   [
+    {"label":"Legend","q":[
+      ["{ampel:green}",">=O(1000)h of experience"],
+      ["{ampel:yellow}","O(100)h of experience"],
+      ["{ampel:red}","basic knowledge"],      
+    ]},
     {"label":"skills","q":[
       ["physics","see [LI grades:gradesNK]"],
       ["machine learning","{ampel:green} [LI whyml:More...NK]"],

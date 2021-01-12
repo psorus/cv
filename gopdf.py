@@ -1,7 +1,7 @@
 import pdfkit as p
 import os
 
-options={"page-size":"A3"}
+options={"page-size":"A4"}
 
 def trafoone(fro,too):
   try:

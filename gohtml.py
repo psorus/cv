@@ -184,6 +184,7 @@ def docollumn(h,q):
 
 
 def replacer(q,fontsize="1.3em"):
+  if not onlinemode:fontsize="1.0em"
   q=q.replace("{ampel:0}",genampel(0))
   q=q.replace("{ampel:red}",genampel(0))
   q=q.replace("{ampel:r}",genampel(0))
