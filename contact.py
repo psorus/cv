@@ -4,6 +4,7 @@ from h import *
 from colormod import *
 from helper import *
 
+import time
 
 
 def contact(q):
@@ -42,7 +43,8 @@ def contact(q):
       ret.append('<p style="back">%s</p>' % ot)
   if "image" in q.keys():
     ac=q["image"]
-    ret.append('<i src="%s" alt="my image"></i>' % handlelink(ac))
+    ret.append('<img src="%s" alt="my image"></img>' % handlelink(ac))
+    #print(ret[-1])
 
   
   
@@ -62,6 +64,9 @@ def contact(q):
 
 
 
-  return adaptouter(q,ret,head)
+  ret= adaptouter(q,ret,head)
+  print(ret)
+  return ret
+
 
 # def contactpdf(q):
