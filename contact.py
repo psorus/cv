@@ -65,7 +65,7 @@ def contact(q):
 
 
   ret= adaptouter(q,ret,head)
-  print(ret)
+  #print(ret)
   return ret
 
 
