@@ -34,7 +34,7 @@
   ]},
   {"label":"Computational","q":[
 ["Basic C++ Programming","1.0 {ampel:green}"],
-["Algorithms and Datastructures","2.0 {ampel:yellow}"],
+["Algorithms and Data structures","2.0 {ampel:yellow}"],
 ["Basics of data analysis","3.3 {ampel:yellow}"],
   ]},
   {"label":"Other","q":[["My Master grades","[LI grades:HereNK]"],

@@ -38,7 +38,8 @@
       ["automatisation","{ampel:green} [LI whyautomate:More...NK]"],
       ["anomaly detection","{ampel:green} [LI whyanomaly:More...NK]"],
       ["statistics","{ampel:green} [LI whystatistics:More...NK]"],
-      
+
+      ["genetical programming","{ampel:yellow} [LI whygenetics:More...NK]"],
       ["web scraping","{ampel:yellow} [LI whyscrape:More...NK]"],
       ["cryptography","{ampel:yellow}"],
       ["blockchain","{ampel:yellow} [LI whyblockchain:More...NK]"],
