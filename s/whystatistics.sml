@@ -1,4 +1,5 @@
 {"type":"text","q":'''
+[LI cv:Back to CVNK][n]
 
 
 When I first started to need statistics for my studies, I did not want to change
