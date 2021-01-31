@@ -1,20 +1,21 @@
 {"type":"doublelist","title":"CV","color":"white","q":[
   [
     {"label":"timeline","q":[
-      ["1997","born in mönchengladbach"],
+      ["1997","born in mönchengladbach (germany)"],
       ["2015","finished school (franz meyers gymnasium)"],
       ["later that year","started studying physics (@RWTH university)"],
       ["2018","finished bachelor studies"],
       ["","see [LI abstract_bachelor:Thesis abstractNK] or [LI download_bachelor:Thesis downloadNK] aswell as my [LI grades_bachelor:GradesNK]"],
       ["2020","finished master studies"],
       ["","see [LI abstract_master:Thesis abstractNK] or [LI download_master:Thesis downloadNK] aswell as my [LI grades:GradesNK]"],
-      ["final grades","depending on my master thesis somewhere between 1.4 and 2.6 ([LI finalgrade:moreNK])"]
+      ["final grades","depending on my master thesis somewhere between 1.4 and 2.6 ([LI finalgrade:moreNK])"],
+      ["update 29.01","probably 1.6"]
     ]},
     {"label":"programming languages","q":[
       ["python","{ampel:green} [LI whypython:More...NK]"],
       ["visual basic","{ampel:green} [LI whyvbasic:More...NK]"],     
       ["c++","{ampel:yellow} [LI whycpp:More...NK]"],
-      ["solidity","{ampel:red} [LI whysolidity:More...NK]","weak"],
+      ["solidity","{ampel:yellow} [LI whysolidity:More...NK]"],
       ["php","{ampel:red} [LI whyweb:More...NK]","weak"],
       ["javascript","{ampel:red} [LI whyweb:More...NK]","weak"],
       ["html/css","{ampel:red} [LI whyweb:More...NK]","weak"],
@@ -46,6 +47,7 @@
       ["web development","{ampel:yellow} [LI whyweb:More...NK]"],
       ["sympy","{ampel:yellow} [LI whysympy:More...NK]"],
       ["graph theory","{ampel:yellow} [LI whygraph:More...NK]"],
+      ["reinforcement learning","{ampel:yellow}"],
       
       ["opengl","{ampel:red}","mediocre"],
       ["flask","{ampel:red}","mediocre"],

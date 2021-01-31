@@ -16,12 +16,12 @@
   }
 </script>
 <script type="text/javascript">
-  function ftestobvious(q) {
-    x=document.querySelectorAll("dd.obvious")
+  function ftestmediocre(q) {
+    x=document.querySelectorAll("dd.mediocre")
     for(var i=0;i<x.length;i++){
       if (x[i].style.display ==="none"){x[i].style.display="block";}else{x[i].style.display="none";}
     }
-    x=document.querySelectorAll("dt.obvious")
+    x=document.querySelectorAll("dt.mediocre")
     for(var i=0;i<x.length;i++){
       if (x[i].style.display ==="none"){x[i].style.display="block";}else{x[i].style.display="none";}
     }
@@ -29,12 +29,12 @@
   }
 </script>
 <script type="text/javascript">
-  function ftestmediocre(q) {
-    x=document.querySelectorAll("dd.mediocre")
+  function ftestobvious(q) {
+    x=document.querySelectorAll("dd.obvious")
     for(var i=0;i<x.length;i++){
       if (x[i].style.display ==="none"){x[i].style.display="block";}else{x[i].style.display="none";}
     }
-    x=document.querySelectorAll("dt.mediocre")
+    x=document.querySelectorAll("dt.obvious")
     for(var i=0;i<x.length;i++){
       if (x[i].style.display ==="none"){x[i].style.display="block";}else{x[i].style.display="none";}
     }
@@ -342,7 +342,7 @@ body{background:white}
 <legend>timeline</legend>
 
 <dl>
-<dt class='full'>1997</dt><dd class='full'>born in m&ouml;nchengladbach</dd>
+<dt class='full'>1997</dt><dd class='full'>born in m&ouml;nchengladbach (germany)</dd>
 <dt class='full'>2015</dt><dd class='full'>finished school (franz meyers gymnasium)</dd>
 <dt class='full'>later that year</dt><dd class='full'>started studying physics (@RWTH university)</dd>
 <dt class='full'>2018</dt><dd class='full'>finished bachelor studies</dd>
@@ -350,6 +350,7 @@ body{background:white}
 <dt class='full'>2020</dt><dd class='full'>finished master studies</dd>
 <dt class='full'></dt><dd class='full'>see <a href="http://www.psorus.de//s/abstract_master.html">Thesis abstract</a> or <a href="http://www.psorus.de//s/download_master.html">Thesis download</a> aswell as my <a href="http://www.psorus.de//s/grades.html">Grades</a></dd>
 <dt class='full'>final grades</dt><dd class='full'>depending on my master thesis somewhere between 1.4 and 2.6 (<a href="http://www.psorus.de//s/finalgrade.html">more</a>)</dd>
+<dt class='full'>update 29.01</dt><dd class='full'>probably 1.6</dd>
 </dl>
 </fieldset>
 <fieldset>
@@ -366,9 +367,9 @@ body{background:white}
 <dt class='full'>c++</dt><dd class='full'><span class="ampel" title="good"><span class="dotgray"></span>
 <span class="dotyellow"></span>
 <span class="dotgray"></span></span> <a href="http://www.psorus.de//s/whycpp.html">More...</a></dd>
-<dt class='weak'>solidity</dt><dd class='weak'><span class="ampel" title="average"><span class="dotgray"></span>
-<span class="dotgray"></span>
-<span class="dotred"></span></span> <a href="http://www.psorus.de//s/whysolidity.html">More...</a></dd>
+<dt class='full'>solidity</dt><dd class='full'><span class="ampel" title="good"><span class="dotgray"></span>
+<span class="dotyellow"></span>
+<span class="dotgray"></span></span> <a href="http://www.psorus.de//s/whysolidity.html">More...</a></dd>
 <dt class='weak'>php</dt><dd class='weak'><span class="ampel" title="average"><span class="dotgray"></span>
 <span class="dotgray"></span>
 <span class="dotred"></span></span> <a href="http://www.psorus.de//s/whyweb.html">More...</a></dd>
@@ -411,10 +412,10 @@ body{background:white}
 </fieldset>
 <fieldset>
 <legend>skills</legend>
-  <input type="checkbox" id="hideobvious" name="hideobvious" value="True" onclick="ftestobvious(this)" checked>
-<label for="hideobvious">show obvious</label>
   <input type="checkbox" id="hidemediocre" name="hidemediocre" value="True" onclick="ftestmediocre(this)" checked>
 <label for="hidemediocre">show mediocre</label>
+  <input type="checkbox" id="hideobvious" name="hideobvious" value="True" onclick="ftestobvious(this)" checked>
+<label for="hideobvious">show obvious</label>
 <dl>
 <dt class='full'>physics</dt><dd class='full'>see <a href="http://www.psorus.de//s/grades.html">grades</a></dd>
 <dt class='full'>machine learning</dt><dd class='full'><span class="ampel" title="great"><span class="dotgreen"></span>
@@ -456,6 +457,9 @@ body{background:white}
 <dt class='full'>graph theory</dt><dd class='full'><span class="ampel" title="good"><span class="dotgray"></span>
 <span class="dotyellow"></span>
 <span class="dotgray"></span></span> <a href="http://www.psorus.de//s/whygraph.html">More...</a></dd>
+<dt class='full'>reinforcement learning</dt><dd class='full'><span class="ampel" title="good"><span class="dotgray"></span>
+<span class="dotyellow"></span>
+<span class="dotgray"></span></span></dd>
 <dt class='mediocre'>opengl</dt><dd class='mediocre'><span class="ampel" title="average"><span class="dotgray"></span>
 <span class="dotgray"></span>
 <span class="dotred"></span></span></dd>
