@@ -52,3 +52,4 @@ def main(what):
 
 if __name__ == "__main__":
     main("finalise/amsterdam")
+    main("finalise/lyon")
