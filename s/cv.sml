@@ -5,7 +5,7 @@
       ["2015","finished school (franz meyers gymnasium)"],
       ["later that year","started studying physics (@RWTH university)"],
       ["2018","finished bachelor studies"],
-      ["","see [LI abstract_bachelor:Thesis abstractNK] or [LI download_bachelor:Thesis downloadNK] aswell as my [LI grades_bachelor:GradesNK] or my [LI download_zeugniss_bachelor:testimonyNK]"],
+      ["","see [LI abstract_bachelor:Thesis abstractNK] or [LI download_bachelor:Thesis downloadNK] aswell as my [LI grades_bachelor:GradesNK] or my [LI download_zeugniss_bachelor:TestimonyNK]"],
       ["2020","finished master studies"],
       ["","see [LI abstract_master:Thesis abstractNK] or [LI download_master:Thesis downloadNK] aswell as my [LI grades:GradesNK]"],
       ["final grades","depending on my master thesis somewhere between 1.4 and 2.6 ([LI finalgrade:moreNK])"],
