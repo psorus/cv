@@ -24,6 +24,7 @@
       ["german","{ampel:green}"],
       ["english","{ampel:green}"],
     ]},
+    {"label":"go Back","q":[["Back to","[LI index:overviewNK]"]]}
   ],
   [
     {"label":"Legend","q":[
@@ -47,7 +48,7 @@
       ["web development","{ampel:yellow} [LI whyweb:More...NK]"],
       ["sympy","{ampel:yellow} [LI whysympy:More...NK]"],
       ["graph theory","{ampel:yellow} [LI whygraph:More...NK]"],
-      ["reinforcement learning","{ampel:yellow}"],
+      ["reinforcement learning","{ampel:yellow} [LI whyrl:More...NK]"],
       
       ["opengl","{ampel:red}","mediocre"],
       ["flask","{ampel:red}","mediocre"],
@@ -58,6 +59,7 @@
       ["matplotlib","{ampel:green}","obvious"],
       ["bash","{ampel:yellow}","obvious"],
       ["latex","{ampel:yellow}","obvious"],
+      ["cluster computations","{ampel:yellow}","obvious"],
       ["scipy","{ampel:red}","obvious"],
 
     ]},
