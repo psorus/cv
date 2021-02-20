@@ -1,11 +1,15 @@
 <html>
-    <head><title>Doctor Reference, or how I learned to stop needing reference letters</title></head>
+    <head><title>Doctor Reference, or how I learned to stop using directly send reference letters</title></head>
     <body>
-        <form action="/fakeref.php" method="POST">
-            <p>Send the reference letters to <input type="text" name="mail"></p>
-            <p>How should they call you? <input type="text" name="nam"></p>
+        <p>This little php script allows you to send reference letters from really impressive email addresses. This works, without the owner of this email address even knowing about this script, but is probably illegal (and can be detected with a little computer skill). To not be sued about this, I always add a header explaining how you got this email. So if you think you can get really good reference letters by just using this script, I sadly have to disappoint you (but if you really want to do this, and you are aware of the risk, it is not that hard to do yourself (but I strongly advise against doing this)</p>
+        <form action="/fakeref.php" method="GET">
+            <p>Send the reference letters to which email? <input type="text" name="mail"></p>
+            <p>How should they address the receiving person? <input type="text" name="add" value="Recruiter"></p>
+            <p>How should they call you? <input type="text" name="nam" value="Simon"></p>
 
             <input type="submit" value="Send Emails">
         </form>
+        
+        <p>The responding emails can sometimes go to your spam folder. I believe this is because in the Email I explicitely say that this is not a real email, and even a bad spam filter will understand that a message which says to be spam itself is a spam email</p>
     </body>
 </html>
