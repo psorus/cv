@@ -7,9 +7,8 @@
       ["2018","finished bachelor studies"],
       ["","see [LI abstract_bachelor:Thesis abstractNK] or [LI download_bachelor:Thesis downloadNK] aswell as my [LI grades_bachelor:GradesNK] or my [LI download_zeugniss_bachelor:TestimonyNK]"],
       ["2020","finished master studies"],
-      ["","see [LI abstract_master:Thesis abstractNK] or [LI download_master:Thesis downloadNK] aswell as my [LI grades:GradesNK]"],
-      ["final grades","depending on my master thesis somewhere between 1.4 and 2.6 ([LI finalgrade:moreNK])"],
-      ["update 29.01","probably 1.6"]
+      ["","see [LI abstract_master:Thesis abstractNK] or [LI download_master:Thesis downloadNK] aswell as my [LI grades:GradesNK] or my [LI download_zeugniss_master:TestimonyNK]"],
+      ["final grade","1.6"]
     ]},
     {"label":"programming languages","q":[
       ["python","{ampel:green} [LI whypython:More...NK]"],
