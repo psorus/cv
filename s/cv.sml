@@ -6,7 +6,7 @@
       ["later that year","started studying physics (@RWTH university)"],
       ["2018","finished bachelor studies"],
       ["","see [LI abstract_bachelor:Thesis abstractNK] or [LI download_bachelor:Thesis downloadNK] aswell as my [LI grades_bachelor:GradesNK] or my [LI download_zeugniss_bachelor:TestimonyNK]"],
-      ["2020","finished master studies"],
+      ["2020/21","finished master studies"],
       ["","see [LI abstract_master:Thesis abstractNK] or [LI download_master:Thesis downloadNK] aswell as my [LI grades:GradesNK] or my [LI download_zeugniss_master:TestimonyNK]"],
       ["final grade","1.6"]
     ]},
