@@ -22,6 +22,7 @@
     {"label":"languages","q":[
       ["german","{ampel:green}"],
       ["english","{ampel:green}"],
+      ["french","{ampel:red}"],
     ]},
     {"label":"go Back","q":[["Back to","[LI index:overviewNK]"]]}
   ],
@@ -40,7 +41,7 @@
       ["anomaly detection","{ampel:green} [LI whyanomaly:More...NK]"],
       ["statistics","{ampel:green} [LI whystatistics:More...NK]"],
 
-      ["genetical programming","{ampel:yellow} [LI whygenetics:More...NK]"],
+      ["genetical programming","{ampel:green} [LI whygenetics:More...NK]"],
       ["web scraping","{ampel:yellow} [LI whyscrape:More...NK]"],
       ["cryptography","{ampel:yellow}"],
       ["blockchain","{ampel:yellow} [LI whyblockchain:More...NK]"],
@@ -48,9 +49,9 @@
       ["sympy","{ampel:yellow} [LI whysympy:More...NK]"],
       ["graph theory","{ampel:yellow} [LI whygraph:More...NK]"],
       ["reinforcement learning","{ampel:yellow} [LI whyrl:More...NK]"],
+      ["recurrent ml","{ampel:yellow}"],
       
-      ["opengl","{ampel:red}","mediocre"],
-      ["flask","{ampel:red}","mediocre"],
+      ["flask","{ampel:yellow}"],
       ["microcontroller programming","{ampel:red}","mediocre"],
       
       ["vim","{ampel:yellow}","obvious"],
