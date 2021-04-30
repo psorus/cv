@@ -22,7 +22,6 @@
     {"label":"languages","q":[
       ["german","{ampel:green}"],
       ["english","{ampel:green}"],
-      ["french","{ampel:red}"],
     ]},
     {"label":"go Back","q":[["Back to","[LI index:overviewNK]"]]}
   ],
