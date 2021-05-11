@@ -8,7 +8,9 @@
       ["","see [LI abstract_bachelor:Thesis abstractNK] or [LI download_bachelor:Thesis downloadNK] aswell as my [LI grades_bachelor:GradesNK] or my [LI download_zeugniss_bachelor:TestimonyNK]"],
       ["2020/21","finished master studies"],
       ["","see [LI abstract_master:Thesis abstractNK] or [LI download_master:Thesis downloadNK] aswell as my [LI grades:GradesNK] or my [LI download_zeugniss_master:TestimonyNK]"],
-      ["final grade","1.6"]
+      ["final grade","1.6"],
+      ["currently","CTO of [LI goto_localpet:localpetitionNK]"],
+      ["","Tutor @ Lernstudio Barbarossa"]
     ]},
     {"label":"programming languages","q":[
       ["python","{ampel:green} [LI whypython:More...NK] ([LI goto_state:stateNK]) ([LI goto_helper:helperNK])"],
