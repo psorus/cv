@@ -1,1 +1,1 @@
-{"type":"link","q":"http://localpetition.tk/"}
+{"type":"link","q":"https://prototype.localpetition.org/"}
