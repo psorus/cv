@@ -9,8 +9,10 @@
       ["2020/21","finished master studies"],
       ["","see [LI abstract_master:Thesis abstractNK] or [LI download_master:Thesis downloadNK] aswell as my [LI grades:GradesNK] or my [LI download_zeugniss_master:TestimonyNK]"],
       ["final grade","1.6"],
-      ["currently","CTO of [LI goto_localpet:localpetitionNK]"],
-      ["","Tutor @ Lernstudio Barbarossa"]
+      ["during this","CTO of [LI goto_localpet:localpetitionNK]"],
+      ["","Tutor @ Lernstudio Barbarossa"],
+      ["currently","Phd Student @ls9 TU Dortmund"],
+      ["","Focus on anomaly detection and ensemble methods"]
     ]},
     {"label":"programming languages","q":[
       ["python","{ampel:green} [LI whypython:More...NK] ([LI goto_state:stateNK]) ([LI goto_helper:helperNK])"],
